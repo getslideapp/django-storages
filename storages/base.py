@@ -9,6 +9,7 @@ class BaseStorage(Storage):
         for name, value in default_settings.items():
             if not hasattr(self, name):
                 setattr(self, name, value)
+                print("test")
 
         for name, value in settings.items():
             if name not in default_settings:
