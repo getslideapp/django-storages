@@ -225,6 +225,7 @@ class GoogleCloudStorage(BaseStorage):
 
     def get_object_parameters(self, name):
         """Override this to return a dictionary of overwritable blob-property to value.
+        
         Returns GS_OBJECT_PARAMETRS by default. See the docs for all possible options.
         """
         object_parameters = self.object_parameters.copy()
